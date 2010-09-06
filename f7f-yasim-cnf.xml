@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+f7f September 2010 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="f7f-base.xml">
+
+  <sim>
+
+    <description>Grumman F7F Tigercat (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>f7f-yasim</aero>
+
+  </sim>
+  
+</PropertyList>
+

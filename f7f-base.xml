@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/F7F-Tigercat/f7f-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/F7F-Tigercat/Models/f7f.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/F7F-Tigercat/Models/weapons/release.xml</path>
+    </submodels>
+
+    <sound>
+      <path>Aircraft/F7F-Tigercat/Sounds/f7f-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0"> 0 </int>
+        <int type="int" n="1"> 0 </int>
+        <int type="int" n="2"> 0 </int>
+        <int type="int" n="3"> 0 </int>
+        <int type="int" n="4"> 0 </int>
+        <int type="int" n="5"> 0 </int>
+      </generic>
+    </multiplay>
+
+    <flaps>
+      <setting> 0.00 </setting>
+      <setting> 0.25 </setting>
+      <setting> 0.50 </setting>
+      <setting> 0.75 </setting>
+      <setting> 1.00 </setting>
+    </flaps>
+
+    <help>
+      <title>Northrop f7f</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close bimb bay door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/f7f-menu.xml"/>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+	<boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+	<boost type="double">0</boost>
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/f7f-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/F7F-Tigercat/Nasal/doors.nas</file>
+    </doors>
+    <f7f>
+      <file>Aircraft/F7F-Tigercat/Nasal/liveries.nas</file>
+    </f7f>
+  </nasal>
+
+</PropertyList>
+

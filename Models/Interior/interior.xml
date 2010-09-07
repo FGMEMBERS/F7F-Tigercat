@@ -33,7 +33,7 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -2.779 </x-m>
+      <x-m> -2.669 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.191 </z-m>
       <roll-deg>    0 </roll-deg>
@@ -54,6 +54,45 @@
       <heading-deg>  0 </heading-deg>
     </offsets>
   </model>
+
+  <!-- Canopy -->
+  <animation>
+    <name>IntAllCanopy</name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntAllCanopy</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.02 </ind><dep> 0.03 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.03 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntAllCanopy</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.02 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.45 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

@@ -2,7 +2,7 @@
  
 <PropertyList>
 
-    <fx>
+  <fx>
 
     <!-- Moteur 1 -->
     <crank>
@@ -212,214 +212,6 @@
       <max-dist>1000</max-dist>
     </engine>
 
-    <!-- Moteur 3 -->
-    <crank>
-      <name>engstart</name>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <property>/engines/engine[2]/cranking</property>
-      <volume>
-        <offset>-0.4</offset>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <crank>
-      <name>crank</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <condition>
-        <property>/engines/engine[2]/cranking</property>
-        <not>
-          <property>/engines/engine[2]/running</property>
-        </not>
-      </condition>
-      <volume>
-        <offset>-0.5</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/cranking</property>
-        <factor>1.0</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <crank>
-      <name>cough</name>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <property>/engines/engine[2]/running</property>
-      <volume>
-        <offset>-0.50</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/running</property>
-        <factor>1.0</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <engine>
-      <name>engine</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/running.wav</path>
-      <condition>
-        <property>/engines/engine[2]/running</property>
-        <less-than>
-          <property>/engines/engine[2]/rpm</property>
-          <value>5000</value>
-        </less-than>
-      </condition>
-      <volume>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.2</min>
-        <max>1.0</max>
-        <offset>0.0</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-    <engine>
-      <name>enginerun</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/running.wav</path>
-      <condition>
-        <property>/engines/engine[2]/running</property>
-        <greater-than>
-          <property>/engines/engine[2]/rpm</property>
-          <value>400</value>
-        </greater-than>
-      </condition>
-      <volume>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.00</max>
-        <offset>0.0</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[2]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-    <!-- Moteur 4 -->
-    <crank>
-      <name>engstart</name>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <property>/engines/engine[3]/cranking</property>
-      <volume>
-        <offset>-0.4</offset>
-      </volume>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <crank>
-      <name>crank</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <condition>
-        <property>/engines/engine[3]/cranking</property>
-        <not>
-          <property>/engines/engine[3]/running</property>
-        </not>
-      </condition>
-      <volume>
-        <offset>-0.5</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/cranking</property>
-        <factor>1.0</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <crank>
-      <name>cough</name>
-      <path>Aircraft/F7F-Tigercat/Sounds/starter.wav</path>
-      <property>/engines/engine[3]/running</property>
-      <volume>
-        <offset>-0.50</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/running</property>
-        <factor>1.0</factor>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </crank>
-
-    <engine>
-      <name>engine</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/running.wav</path>
-      <condition>
-        <property>/engines/engine[3]/running</property>
-        <less-than>
-          <property>/engines/engine[3]/rpm</property>
-          <value>5000</value>
-        </less-than>
-      </condition>
-      <volume>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.2</min>
-        <max>1.0</max>
-        <offset>0.0</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-    <engine>
-      <name>enginerun</name>
-      <mode>looped</mode>
-      <path>Aircraft/F7F-Tigercat/Sounds/running.wav</path>
-      <condition>
-        <property>/engines/engine[3]/running</property>
-        <greater-than>
-          <property>/engines/engine[3]/rpm</property>
-          <value>400</value>
-        </greater-than>
-      </condition>
-      <volume>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.00</max>
-        <offset>0.0</offset>
-      </volume>
-      <pitch>
-        <property>/engines/engine[3]/rpm</property>
-        <factor>0.00033</factor>
-        <min>0.0</min>
-        <max>1.0</max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -543,6 +335,20 @@
       <max-dist>1000</max-dist>
     </stall>
  
+    <guns> 
+      <name>gunfire</name>
+      <mode>looped</mode>
+      <path>Aircraft/F7F-Tigercat/Sounds/gunfire.wav</path>
+      <condition> 
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel/count</property>
+      </condition>
+      <volume> 
+        <factor>1.2</factor>
+        <max>1.0</max>
+      </volume>
+    </guns>
+
   </fx>
  
 </PropertyList>

@@ -11,6 +11,21 @@
     </binding>
   </key>
 
+   <key n="101">
+     <name>e</name>
+     <desc>Guns</desc>
+     <binding>
+       <command>nasal</command>
+       <script>guns.fire_MG()</script>
+     </binding>
+     <mod-up>
+       <binding>
+         <command>nasal</command>
+         <script>guns.stop_MG()</script>
+       </binding>
+     </mod-up>
+   </key>
+
   <key n="102">
     <name>f</name>
     <desc>shift Blower down</desc>

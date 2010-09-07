@@ -204,6 +204,90 @@
     </offsets>
   </model>
 
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -6.214 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.692 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -1.528 </x-m>
+      <y-m> -3.029 </y-m>
+      <z-m> -2.420 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Patte droite -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -1.528 </x-m>
+      <y-m>  3.029 </y-m>
+      <z-m> -2.420 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets de tir -->
+  <!-- Gauche haut -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -6.013 </x-m>
+      <y-m> -0.280 </y-m>
+      <z-m> -0.627 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Gauche bas -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -5.963 </x-m>
+      <y-m> -0.231 </y-m>
+      <z-m> -0.762 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Droite haut -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -6.013 </x-m>
+      <y-m>  0.280 </y-m>
+      <z-m> -0.627 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Droite bas -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -5.963 </x-m>
+      <y-m>  0.231 </y-m>
+      <z-m> -0.762 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> 180 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Les hélices --> 
   <animation>
     <name>HeliceCompleteG</name>
@@ -783,6 +867,100 @@
       <z>  0 </z>
     </axis>
   </animation>
+
+  <!-- Canopy -->
+  <animation>
+    <name>AllCanopy</name>
+    <object-name>tourverriere</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>AllCanopy</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.02 </ind><dep> 0.03 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.03 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>AllCanopy</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 0.02 </ind><dep> 0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 0.45 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m>  5.973 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  2.670 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> -1.791 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.102 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m> -2.220 </x-m>
+      <y-m> -7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.220 </x-m>
+      <y-m>  7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -2.218 </x-m>
+      <y-m> -7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -2.218 </x-m>
+      <y-m>  7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
 

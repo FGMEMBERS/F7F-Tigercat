@@ -14,6 +14,10 @@
       <splash-texture>Aircraft/F7F-Tigercat/f7f-splash.png</splash-texture>
     </startup>
 
+    <sound>
+      <path>Aircraft/F7F-Tigercat/Sounds/f7f-sound.xml</path>
+    </sound>
+
     <model>
       <path>Aircraft/F7F-Tigercat/Models/f7f.xml</path>
       <livery>
@@ -23,12 +27,8 @@
 
     <submodels>
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/F7F-Tigercat/Models/weapons/release.xml</path>
+      <path>Aircraft/F7F-Tigercat/Models/Effects/guns/submodels.xml</path>
     </submodels>
-
-    <sound>
-      <path>Aircraft/F7F-Tigercat/Sounds/f7f-sound.xml</path>
-    </sound>
 
     <multiplay>
       <chat_display>1</chat_display>
@@ -39,6 +39,8 @@
         <int type="int" n="3"> 0 </int>
         <int type="int" n="4"> 0 </int>
         <int type="int" n="5"> 0 </int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
 
@@ -51,7 +53,7 @@
     </flaps>
 
     <help>
-      <title>Northrop f7f</title>
+      <title>Grumman F7F Tigercat</title>
       <key>
         <name>d</name>
         <desc>Open/Close bimb bay door</desc>
@@ -98,7 +100,12 @@
     </doors>
     <f7f>
       <file>Aircraft/F7F-Tigercat/Nasal/liveries.nas</file>
+      <file>Aircraft/F7F-Tigercat/Nasal/light.nas</file>
     </f7f>
+    <guns>
+      <file>Aircraft/F7F-Tigercat/Nasal/weapons.nas</file>
+      <file>Aircraft/F7F-Tigercat/Nasal/revi.nas</file>
+    </guns>
   </nasal>
 
 </PropertyList>

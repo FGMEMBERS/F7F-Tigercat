@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/F7F-Tigercat/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -30,26 +44,27 @@
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourverriere</object-name>
+
+    <object-name>trous</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
-    <object-name>porteGE</object-name>
-    <object-name>porteGI</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
-    <object-name>porteDE</object-name>
-    <object-name>porteDI</object-name>
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
-    <object-name>trous</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
-    <object-name>bolG</object-name>
-    <object-name>bolD</object-name>
     <object-name>guns</object-name>
-    <object-name>tourverriere</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -77,26 +92,27 @@
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourverriere</object-name>
+
+    <object-name>trous</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
-    <object-name>porteGE</object-name>
-    <object-name>porteGI</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
-    <object-name>porteDE</object-name>
-    <object-name>porteDI</object-name>
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
-    <object-name>trous</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
-    <object-name>bolG</object-name>
-    <object-name>bolD</object-name>
     <object-name>guns</object-name>
-    <object-name>tourverriere</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -143,6 +159,9 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
+    <object-name>moteurs</object-name>
+    <object-name>ailettesG</object-name>
+    <object-name>ailettesD</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
@@ -150,9 +169,8 @@
     <object-name>porteGI</object-name>
     <object-name>porteDE</object-name>
     <object-name>porteDI</object-name>
-    <object-name>moteurs</object-name>
-    <object-name>ailettesG</object-name>
-    <object-name>ailettesD</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
     <object-name>tourverriere</object-name>
   </effect>
 
@@ -173,22 +191,48 @@
     <object-name>propdiscD</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.002 </z-m>
+    </offsets>
+  </model>
+ 
   <!-- Intérieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
+  </model>
+
+  <!-- Cranking -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/cranking/all-crankingL.xml</path>
+    <offsets> 
+      <x-m> -3.650 </x-m>
+      <y-m> -2.981 </y-m>
+      <z-m> -0.277 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/cranking/all-crankingR.xml</path>
+    <offsets> 
+      <x-m> -3.650 </x-m>
+      <y-m>  2.981 </y-m>
+      <z-m> -0.277 </z-m>
     </offsets>
   </model>
 
   <!-- Moteurs -->
   <!-- gauche -->
   <model>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/r2800.xml</path>
+    <path>Aircraft/F7F-Tigercat/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -3.723 </x-m>
+      <x-m> -3.650 </x-m>
       <y-m> -2.981 </y-m>
       <z-m> -0.277 </z-m>
     </offsets>
@@ -196,9 +240,9 @@
 
   <!-- droit -->
   <model>
-    <path>Aircraft/F7F-Tigercat/Models/Engines/r2800.xml</path>
+    <path>Aircraft/F7F-Tigercat/Models/Engines/engine.xml</path>
     <offsets>
-      <x-m> -3.723 </x-m>
+      <x-m> -3.650 </x-m>
       <y-m>  2.981 </y-m>
       <z-m> -0.277 </z-m>
     </offsets>
@@ -225,7 +269,7 @@
     </offsets>
   </model>
 
-  <!-- Patte droite -->
+  <!-- Roue droite -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/ground/ground2.xml</path>
     <offsets>
@@ -243,9 +287,7 @@
       <x-m> -6.013 </x-m>
       <y-m> -0.280 </y-m>
       <z-m> -0.627 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -256,9 +298,7 @@
       <x-m> -5.963 </x-m>
       <y-m> -0.231 </y-m>
       <z-m> -0.762 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -269,9 +309,7 @@
       <x-m> -6.013 </x-m>
       <y-m>  0.280 </y-m>
       <z-m> -0.627 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -282,9 +320,7 @@
       <x-m> -5.963 </x-m>
       <y-m>  0.231 </y-m>
       <z-m> -0.762 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -878,7 +914,7 @@
   <animation>
     <type>translate</type>
     <object-name>AllCanopy</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.02 </ind><dep> 0.03 </dep></entry>
@@ -894,7 +930,7 @@
   <animation>
     <type>translate</type>
     <object-name>AllCanopy</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.02 </ind><dep> 0.00 </dep></entry>

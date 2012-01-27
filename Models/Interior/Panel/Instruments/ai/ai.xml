@@ -8,6 +8,7 @@
     <!-- Objets opaques -->
     <object-name>face</object-name>
     <object-name>fond</object-name>
+    <object-name>visses</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
@@ -35,8 +36,7 @@
   <animation> 
     <type>rotate</type>
     <object-name>face</object-name>
-    <property>orientation/roll-deg</property>
-    <factor>1</factor>
+    <property>/instrumentation/attitude-indicator/indicated-roll-deg</property>
     <axis> 
       <x> 1 </x>
       <y> 0 </y>

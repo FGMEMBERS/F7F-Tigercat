@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">Default</name>
-        <texture>texture.png</texture>
+        <name type="string">F7F-3 Drone USN 1946</name>
+        <texture>Liveries/F7Ftexture.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -24,3 +24,4 @@
   </sim>
 
 </PropertyList>
+

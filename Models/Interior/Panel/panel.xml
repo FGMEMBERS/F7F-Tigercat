@@ -15,9 +15,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.162 </x-m>
-      <y-m> -0.148 </y-m>
-      <z-m> -0.065 </z-m>
+      <x-m>  0.144 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m> -0.058 </z-m>
     </offsets>
   </model>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.163 </x-m>
-      <y-m> -0.290 </y-m>
-      <z-m> -0.047 </z-m>
+      <x-m>  0.144 </x-m>
+      <y-m> -0.261 </y-m>
+      <z-m> -0.042 </z-m>
     </offsets>
   </model>
 
@@ -35,9 +35,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.156 </x-m>
-      <y-m> -0.250 </y-m>
-      <z-m> -0.144 </z-m>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.227 </y-m>
+      <z-m> -0.134 </z-m>
     </offsets>
   </model>
 
@@ -45,9 +45,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.156 </x-m>
-      <y-m> -0.143 </y-m>
-      <z-m> -0.181 </z-m>
+      <x-m>  0.141 </x-m>
+      <y-m> -0.129 </y-m>
+      <z-m> -0.163 </z-m>
     </offsets>
   </model>
 

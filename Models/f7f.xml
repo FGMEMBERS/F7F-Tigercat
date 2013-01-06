@@ -31,6 +31,8 @@
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
+    <object-name>aileG</object-name>
+    <object-name>aileD</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -53,6 +55,9 @@
     <object-name>tourverriere</object-name>
 
     <object-name>trous</object-name>
+    <object-name>trouaileG</object-name>
+    <object-name>trouaileD</object-name>
+    <object-name>hook</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -79,6 +84,8 @@
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
+    <object-name>aileG</object-name>
+    <object-name>aileD</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -101,6 +108,9 @@
     <object-name>tourverriere</object-name>
 
     <object-name>trous</object-name>
+    <object-name>trouaileG</object-name>
+    <object-name>trouaileD</object-name>
+    <object-name>hook</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -134,6 +144,8 @@
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
+    <object-name>aileG</object-name>
+    <object-name>aileD</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -193,9 +205,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/cranking/all-crankingL.xml</path>
     <offsets> 
-      <x-m> -3.650 </x-m>
-      <y-m> -2.981 </y-m>
-      <z-m> -0.277 </z-m>
+      <x-m> -2.59921 </x-m>
+      <y-m> -2.98172 </y-m>
+      <z-m> -0.29429 </z-m>
     </offsets>
   </model>
 
@@ -203,9 +215,9 @@
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/cranking/all-crankingR.xml</path>
     <offsets> 
-      <x-m> -3.650 </x-m>
-      <y-m>  2.981 </y-m>
-      <z-m> -0.277 </z-m>
+      <x-m> -2.59921 </x-m>
+      <y-m>  2.98172 </y-m>
+      <z-m> -0.29429 </z-m>
     </offsets>
   </model>
 
@@ -302,6 +314,50 @@
       <x-m> -5.963 </x-m>
       <y-m>  0.231 </y-m>
       <z-m> -0.762 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Aile gauche extérieur -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -2.75804 </x-m>
+      <y-m> -0.97848 </y-m>
+      <z-m>  0.01613 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Aile gauche intérieur -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -2.848040 </x-m>
+      <y-m> -0.792480 </y-m>
+      <z-m>  0.000082 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Aile droite intérieur -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -2.848040 </x-m>
+      <y-m>  0.792480 </y-m>
+      <z-m>  0.000082 </z-m>
+      <pitch-deg> 180 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Aile droite extérieur -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
+    <offsets>
+      <x-m> -2.75804 </x-m>
+      <y-m>  0.97848 </y-m>
+      <z-m>  0.01613 </z-m>
       <pitch-deg> 180 </pitch-deg>
     </offsets>
   </model>
@@ -429,6 +485,124 @@
       <x-m> -3.723 </x-m>
       <y-m>  2.981 </y-m>
       <z-m> -0.277 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m>  5.973 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  2.670 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> -1.791 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.102 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeRouge</name>
+    <path>Aircraft/F7F-Tigercat/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m> -2.220 </x-m>
+      <y-m> -7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeVerte</name>
+    <path>Aircraft/F7F-Tigercat/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.220 </x-m>
+      <y-m>  7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeGauche</name>
+    <path>Aircraft/F7F-Tigercat/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.218 </x-m>
+      <y-m> -7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>LampeDroite</name>
+    <path>Aircraft/F7F-Tigercat/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.218 </x-m>
+      <y-m>  7.811 </y-m>
+      <z-m>  0.666 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pliage des ailes -->
+  <animation>
+    <name>AileGauche</name>
+    <object-name>aileG</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>trouaileG</object-name>
+    <object-name>LampeRouge</object-name>
+    <object-name>LampeGauche</object-name>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>AileGauche</object-name>
+    <property>instrumentation/doors/wings/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -140 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.87952 </x-m>
+      <y-m> -4.75838 </y-m>
+      <z-m>  0.55086 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>AileDroite</name>
+    <object-name>aileD</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>trouaileD</object-name>
+    <object-name>LampeVerte</object-name>
+    <object-name>LampeDroite</object-name>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>AileDroite</object-name>
+    <property>instrumentation/doors/wings/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 140 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.87952 </x-m>
+      <y-m>  4.75838 </y-m>
+      <z-m>  0.55086 </z-m>
     </center>
     <axis>
       <x> 1 </x>
@@ -925,60 +1099,25 @@
     </axis>
   </animation>
 
-  <!-- Ajout des effets lumineux -->
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
-    <offsets>
-      <x-m>  5.973 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  2.670 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/beacon.xml</path>
-    <offsets>
-      <x-m> -1.791 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.102 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/RedLight.xml</path>
-    <offsets>
-      <x-m> -2.220 </x-m>
-      <y-m> -7.811 </y-m>
-      <z-m>  0.666 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/GreenLight.xml</path>
-    <offsets>
-      <x-m> -2.220 </x-m>
-      <y-m>  7.811 </y-m>
-      <z-m>  0.666 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/StrobeWhite.xml</path>
-    <offsets>
-      <x-m> -2.218 </x-m>
-      <y-m> -7.811 </y-m>
-      <z-m>  0.666 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/F7F-Tigercat/Models/light/StrobeWhite.xml</path>
-    <offsets>
-      <x-m> -2.218 </x-m>
-      <y-m>  7.811 </y-m>
-      <z-m>  0.666 </z-m>
-    </offsets>
-  </model>
+  <!-- Crosse d'appontage -->
+  <animation>
+    <type>rotate</type>
+    <object-name>hook</object-name>
+    <property>gear/tailhook/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 65 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  4.35350 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.79008 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
-

@@ -66,6 +66,10 @@
         <name>d</name>
         <desc>Open/Close bimb bay door</desc>
       </key>
+      <key>
+        <name>o/O</name>
+        <desc>Hook up/down</desc>
+      </key>
     </help>
 
     <menubar include="Dialogs/f7f-menu.xml"/>
@@ -117,4 +121,3 @@
   </nasal>
 
 </PropertyList>
-

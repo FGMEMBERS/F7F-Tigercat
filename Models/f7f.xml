@@ -191,11 +191,11 @@
     <offsets>
       <x-m> -0.014 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -2.002 </z-m>
+      <z-m> -2.200 </z-m>
     </offsets>
   </model>
  
-  <!-- Intérieur -->
+  <!-- Intrieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/interior.xml</path>
   </model>
@@ -318,7 +318,7 @@
     </offsets>
   </model>
 
-  <!-- Aile gauche extérieur -->
+  <!-- Aile gauche extrieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -329,7 +329,7 @@
     </offsets>
   </model>
 
-  <!-- Aile gauche intérieur -->
+  <!-- Aile gauche intrieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -340,7 +340,7 @@
     </offsets>
   </model>
 
-  <!-- Aile droite intérieur -->
+  <!-- Aile droite intrieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -351,7 +351,7 @@
     </offsets>
   </model>
 
-  <!-- Aile droite extérieur -->
+  <!-- Aile droite extrieur -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -362,7 +362,7 @@
     </offsets>
   </model>
 
-  <!-- Les hélices --> 
+  <!-- Les hlices --> 
   <animation>
     <name>HeliceCompleteG</name>
     <object-name>propdiscG</object-name>
@@ -371,7 +371,7 @@
     <object-name>bolGE</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Slction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscG</object-name>
@@ -436,7 +436,7 @@
     <object-name>bolD</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Slction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscD</object-name>
@@ -844,7 +844,7 @@
     </axis>
   </animation>
 
-  <!-- Rentré des roues -->
+  <!-- Rentr des roues -->
   <animation>
     <name>TrainAvant</name>
     <object-name>axeAH</object-name>

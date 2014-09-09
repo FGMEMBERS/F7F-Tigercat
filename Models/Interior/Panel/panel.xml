@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.144 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m> -0.058 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.144 </x-m>
+      <y-m> -0.261 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.227 </y-m>
+      <z-m> -0.134 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.141 </x-m>
+      <y-m> -0.129 </y-m>
+      <z-m> -0.163 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

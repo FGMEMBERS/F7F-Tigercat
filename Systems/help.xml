@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Grumman F7F Tigercat</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close canopy</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Open/Close wings</desc>
+  </key>
+  <key>
+    <name>o/O</name>
+    <desc>Hook up/down</desc>
+  </key>
+  
+</PropertyList>

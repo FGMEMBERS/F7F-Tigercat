@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="f7f-jsbsim-cnf.xml"> -->
-<PropertyList include="f7f-yasim-cnf.xml">
+<PropertyList include="f7f-base.xml">
 
   <sim>
 
-    <description>Grumman F7F Tigercat</description>
+    <description>Grumman F7F Tigercat (YASim)</description>
     <author>BARANGER Emmanuel</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
 
+    <flight-model>yasim</flight-model>
+    <aero>f7f-yasim</aero>
+    
     <rating>
-      <FDM type="int">     2 </FDM>
+      <FDM type="int">     3 </FDM>
       <systems type="int"> 1 </systems>
-      <cockpit type="int"> 1 </cockpit>
+      <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>
 
   </sim>
 
 </PropertyList>
-

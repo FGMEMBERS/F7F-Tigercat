@@ -11,8 +11,7 @@
      Engines              : 2 Pratt & Whitney R-2800-65W Double Wasp radial engines, 2250 hp each
      Maximum speed        :   400 kt         (   740 km/h )
 -->
-
-<airplane mass="16270">
+<airplane mass="16270" version="YASIM_VERSION_CURRENT">
 
   <approach speed="80" aoa="10" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>

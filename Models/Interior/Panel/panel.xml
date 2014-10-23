@@ -11,6 +11,24 @@
     <!-- Objets transparents -->
   </animation>
 
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/all-visses.xml</path>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/switch/all-switch.xml</path>
+  </model>
+  
+  <!-- N-9_Gunsight -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/N-9_Gunsight/N-9_Gunsight.xml</path>
+    <offsets>
+      <x-m>  0.120 </x-m>
+      <y-m> -0.014 </y-m>
+      <z-m>  0.165 </z-m>
+    </offsets>
+  </model>
+  
   <!-- AI -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/ai/ai.xml</path>
@@ -51,5 +69,103 @@
     </offsets>
   </model>
 
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.207 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> 0.140 </x-m>
+      <y-m> 0.202 </y-m>
+      <z-m> 0.136 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RADIOCOMPASS -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/radiocompass/radiocompass.xml</path>
+    <offsets>
+      <x-m> 0.141 </x-m>
+      <y-m> 0.103 </y-m>
+      <z-m> 0.136 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MANIFOLD -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/manifold/man.xml</path>
+    <offsets>
+      <x-m>  0.140 </x-m>
+      <y-m>  0.116 </y-m>
+      <z-m> -0.128 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.138 </x-m>
+      <y-m>  0.204 </y-m>
+      <z-m> -0.128 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FLAPSGEAR -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/flapsgear/flapgear.xml</path>
+    <offsets>
+      <x-m>  0.136 </x-m>
+      <y-m>  0.215 </y-m>
+      <z-m> -0.039 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.140 </x-m>
+      <y-m> -0.217 </y-m>
+      <z-m> -0.211 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CYLINDER TEMPERATURE -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/cyl/cyl.xml</path>
+    <offsets>
+      <x-m>  0.143 </x-m>
+      <y-m>  0.077 </y-m>
+      <z-m> -0.198 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- EG -->
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/eg/eg1.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.162 </y-m>
+      <z-m> -0.195 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/eg/eg2.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m>  0.247 </y-m>
+      <z-m> -0.195 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -8,9 +8,9 @@ name "interieur"
 loc -0.72702 0.180552 -0.000003
 data 9
 interieur
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 127
 -3.252054 -0.639607 -0.497878
 -3.252054 -0.639607 0.497885
@@ -1090,9 +1090,9 @@ name "inttour"
 loc -0.72702 0.180552 -0.000003
 data 7
 inttour
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 186
 -2.393399 0.705928 0.126865
 -2.393399 0.740198 0.063358
@@ -2155,9 +2155,9 @@ name "inttourverriere"
 loc -0.72702 0.180552 -0.000003
 data 15
 inttourverriere
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 128
 -2.347865 0.738723 0.059142
 -2.370632 0.738546 0.06125
@@ -2976,7 +2976,7 @@ name "intverriere"
 loc -0.72702 0.180552 -0.000003
 data 11
 intverriere
-crease 30.000001
+crease 180.000005
 numvert 60
 -2.347865 0.738723 0.059142
 -2.347865 0.432521 0.269986
@@ -3361,7 +3361,7 @@ name "intvitres"
 loc -0.72702 0.180552 -0.000003
 data 9
 intvitres
-crease 30.000001
+crease 180.000005
 numvert 62
 -2.393399 0.705928 0.126865
 -2.393399 0.740198 0.063358

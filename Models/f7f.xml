@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -132,12 +132,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
@@ -168,23 +162,24 @@
     <object-name>tourverriere</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/F7F-Tigercat/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>verriere</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
     <object-name>propblurG</object-name>
     <object-name>propblurD</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propdiscD</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/F7F-Tigercat/Models/shadow.xml</path>
@@ -197,6 +192,7 @@
  
   <!-- Intrieur -->
   <model>
+    <usage>interior</usage>
     <path>Aircraft/F7F-Tigercat/Models/Interior/interior.xml</path>
   </model>
 
@@ -414,6 +410,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteG</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -479,6 +481,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteD</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>/engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -563,9 +571,23 @@
   </animation>
  
   <animation>
+    <type>pick</type>
+    <object-name>AileGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.wings.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>AileGauche</object-name>
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>sim/model/door-positions/wings/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>    0 </dep></entry>
       <entry><ind> 1 </ind><dep> -140 </dep></entry>
@@ -592,9 +614,23 @@
   </animation>
  
   <animation>
+    <type>pick</type>
+    <object-name>AileDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.wings.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>AileDroite</object-name>
-    <property>instrumentation/doors/wings/position-norm</property>
+    <property>sim/model/door-positions/wings/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep>   0 </dep></entry>
       <entry><ind> 1 </ind><dep> 140 </dep></entry>
@@ -926,9 +962,10 @@
     </axis>
   </animation>
 
-  <!-- Compression
+  <!-- Compression -->
   <animation>
     <name>RoueAvant</name>
+    <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
   </animation>
 
@@ -937,19 +974,19 @@
     <object-name>RoueAvant</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.29 </dep></entry>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1552 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> 0.04 </x>
+      <y> 0.00 </y>
+      <z> 0.15 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <name>RoueGauche</name>
+    <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -958,19 +995,19 @@
     <object-name>RoueGauche</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.29 </dep></entry>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1304 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> 0.00 </x>
+      <y> 0.01 </y>
+      <z> 0.13 </z>
     </axis>
   </animation>
 
   <animation>
     <name>RoueDroite</name>
+    <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -979,16 +1016,15 @@
     <object-name>RoueDroite</object-name>
     <property>gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.29 </dep></entry>
+      <entry><ind> 0 </ind><dep> 0.0000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1304 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> 0.00 </x>
+      <y> 0.01 </y>
+      <z> 0.13 </z>
     </axis>
-  </animation> -->
+  </animation>
 
   <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
   <animation>
@@ -1068,9 +1104,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>AllCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>AllCanopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.02 </ind><dep> 0.03 </dep></entry>
@@ -1086,7 +1136,7 @@
   <animation>
     <type>translate</type>
     <object-name>AllCanopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0.00 </ind><dep> 0.00 </dep></entry>
       <entry><ind> 0.02 </ind><dep> 0.00 </dep></entry>

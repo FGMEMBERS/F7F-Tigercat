@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.045 </y-m>
+      <z-m> 0.139 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.155 </y-m>
+      <z-m> 0.143 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.267 </y-m>
+      <z-m> 0.135 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.069 </y-m>
+      <z-m> 0.080 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.181 </y-m>
+      <z-m> 0.089 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m> 0.146 </x-m>
+      <y-m> 0.181 </y-m>
+      <z-m> 0.089 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.293 </y-m>
+      <z-m>  0.031 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.270 </y-m>
+      <z-m>  0.031 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.210 </y-m>
+      <z-m> -0.033 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.087 </y-m>
+      <z-m> -0.031 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.076 </y-m>
+      <z-m> -0.009 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.258 </y-m>
+      <z-m> -0.012 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.258 </y-m>
+      <z-m> -0.012 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.248 </y-m>
+      <z-m> -0.115 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.177 </y-m>
+      <z-m> -0.109 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.168 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.088 </y-m>
+      <z-m> -0.073 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.080 </y-m>
+      <z-m> -0.094 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.098 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.257 </y-m>
+      <z-m> -0.112 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.170 </y-m>
+      <z-m> -0.136 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.090 </y-m>
+      <z-m> -0.136 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.264 </y-m>
+      <z-m> -0.185 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.170 </y-m>
+      <z-m> -0.212 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.257 </y-m>
+      <z-m> -0.239 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.142 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> -0.238 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m> -0.181 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m> -0.181 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m> -0.181 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.207 </y-m>
+      <z-m> -0.181 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/F7F-Tigercat/Models/Interior/Panel/Instruments/divers/visse.xml</path>
+    <offsets>
+      <x-m>  0.146 </x-m>
+      <y-m>  0.290 </y-m>
+      <z-m> -0.197 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
